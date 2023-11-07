@@ -1,5 +1,6 @@
 <template>
-  <a v-bind:href="url">GO TO BULSKEY.COM</a>
+  <input type="text" v-model="name" />
+  <h4>Name: {{ name }}</h4>
 </template>
 
 <script>
@@ -7,15 +8,8 @@ export default {
   name: "App",
   data() {
     return {
-      url: "https://bulskey.com",
+      name: "",
     };
-  },
-  methods: {
-    changeName() {
-      this.name = "Bulskey";
-    },
   },
 };
 </script>
-
-<style></style>
