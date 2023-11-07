@@ -1,6 +1,5 @@
 <template>
-  <h2>Name: {{ name }}</h2>
-  <button v-on:click="changeName">Ganti Nama</button>
+  <a v-bind:href="url">GO TO BULSKEY.COM</a>
 </template>
 
 <script>
@@ -8,7 +7,7 @@ export default {
   name: "App",
   data() {
     return {
-      name: "Muhammad Rizky Ferdiansyah",
+      url: "https://bulskey.com",
     };
   },
   methods: {
